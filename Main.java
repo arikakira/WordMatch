@@ -13,6 +13,12 @@ public class Main {
         System.out.println(game2.scoreGuess("aabb"));
         System.out.println(game2.scoreGuess("c"));
 
-        
+        WordMatch game3 = new WordMatch("concatenation");       // test case 3
+        System.out.println(game3.scoreGuess("ten"));
+        System.out.println(game3.scoreGuess("nation"));
+        System.out.println(game3.findBetterGuess("ten", "nation"));
+        System.out.println(game3.scoreGuess("con"));
+        System.out.println(game3.scoreGuess("cat"));
+        System.out.println(game3.findBetterGuess("con", "cat"));
     }
 }
